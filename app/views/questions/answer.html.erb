@@ -1,0 +1,14 @@
+<ul>
+    <%# ma question %>
+    <li class="bg-secondary bg-opacity-25 shadow-sm">
+      <p class="ps-3"><%= params[:question] %></p>
+      <p class="ps-3">-You</p>
+    </li>
+    <%# réponse coach %>
+    <li class="bg-warning bg-opacity-10 shadow-sm">
+      <p class="ps-3"><%= @answer %></p>
+      <p class="ps-3">-Your coach</p>
+    </li>
+</ul>
+
+<p class="text-center"><%= link_to "Ask a new question", ask_path %></p>
